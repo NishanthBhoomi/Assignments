@@ -1,0 +1,105 @@
+\documentclass{beamer}
+\usetheme{CambridgeUS}
+
+\setbeamertemplate{caption}[numbered]{}
+
+\usepackage{enumitem}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{gensymb}
+\usepackage{graphicx}
+\usepackage{txfonts}
+
+\def\inputGnumericTable{}
+
+\usepackage[latin1]{inputenc}                                 
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                        
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}
+\usepackage{caption}
+
+\title{AI1110 \\ Assignment 2}
+\author{Nishanth Bhoomi \\ CS21BTECH11040}
+\date{}
+\begin{document}
+	% The title page
+	\begin{frame}
+		\titlepage
+	\end{frame}
+	
+	% The table of contents
+	\begin{frame}{Outline}
+    		\tableofcontents
+	\end{frame}
+	
+	% The question
+	\section{Question}
+	\begin{frame}{Question 12}
+
+A cone is inscribed in a sphere of radius 12 cm.If the volume of the cone is maximum,find its height.\\
+    \end{frame}
+    
+    % The solution
+	\section{Solution}
+	\begin{frame}{Solution}
+	
+\begin{align}
+\end{align}
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=2in]{fig assign2.png}
+	\caption{Cone inscribed in a sphere}
+	\label{Fig-1}
+ \end{figure}
+\end{frame}
+
+\begin{frame}{}
+Let radius of cone be r and its height be h.\\
+Here, r^2 + x^2 =12^2\\
+      r^2 = 144 - x^2\\
+      
+$Now, the  volume  of the cone = \frac{1}{3} \times \pi \times r^2 \times h \\
+                           $ = \frac{1}{3} \times \pi \times (144-x^2) \times (12+x)$\\ 
+                            = $\frac{1}{3} \times \pi \times (12-x) \times (12+x)^2$\\
+
+
+
+Now,$\frac{dV}{dx}=\frac{d}{dx}(\frac{1}{3}\times\pi\times(12-x)\times(12+x)^2)$ \\
+$= \frac{1}{3} \times \pi \times(-(12+x)^2 + 2\times(144-x^2))$\\
+
+$\frac{d^2V}{dx^2}=\frac{1}{3} \times \pi \times(-2\times(12+x)+2\times(0-2x))$\\
+
+                 =$\frac{1}{3}  \times \pi \times(-24-2x-4x)$\\
+                 =$\frac{1}{3} \times \pi \times-(24+6x)$\\
+                 
+\end{frame}{}
+
+\begin{frame}
+                 
+Here,second derivative is negative,implies volume of cone is maximum.
+Now, put $\frac{dV}{dx} =0$ , we obtain,
+
+$\frac{\pi}{3} \times{-(12+x)^2+2\times(144-x^2)}$\\
+\implies (12+x) \times{(-(12+x) + 2\times(12-x)} =0\\
+\implies (12+x) \times{-12-x+24-2\times x}=0\\
+\implies (12+x) \times (12-3x) =0\\
+\implies$(12+x =0)     or    (12-3x =0)$\\
+\implies $x = -12     or    x = 4$\\
+
+\end{frame}
+% The final answer
+	\section{Answer}
+	\begin{frame}{Answer}
+	
+
+	As distance cannot be negative, x = 4.\\
+Hence, for maximum volume of cone, the height of the cone is h=12+x where x=4cm\\
+So, height of the cone is 16cm.\\
+
+
+\end{frame}
+\end{document}
